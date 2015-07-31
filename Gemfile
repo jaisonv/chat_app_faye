@@ -13,6 +13,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+# jQuery plugin for drop-in fix binded events problem caused by Turbolinks
+gem 'jquery-turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -36,7 +38,8 @@ group :development, :test do
 end
 
 group :production do
-  # Postgre
+  # Postgre SQL
   gem 'pg'
+  # Makes running your Rails app easier. Based on the ideas behind 12factor.net
   # gem 'rails_12factor', '0.0.2'
 end
