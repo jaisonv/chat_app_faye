@@ -1,3 +1,5 @@
+# If production asks for access on facebook's app with production URL
+# Otherwise access the one which has the development URL
 if Rails.env.production?
   Rails.application.config.middleware.use OmniAuth::Builder do
     provider :facebook, "1863379923887723", "1cd83c110b2248541c73d9c41c6e2ffe",
