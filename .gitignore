@@ -13,5 +13,8 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
-!/log/.keep
 /tmp
+
+# Ignore dumb files (lol)
+.keep
+.DS_Store
